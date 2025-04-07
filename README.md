@@ -19,13 +19,13 @@ Bienvenue dans mon portfolio personnel réalisé avec **Next.js**, qui met en va
 
 | Page | Description | Capture d'écran |
 |------|-------------|-----------------|
-| **Connexion** | Formulaire de connexion avec validation en direct. | ![Connexion](/connexion.png) |
-| **Accueil** | Page d’accueil avec ma photo, une présentation de moi, et un résumé de mes compétences. | ![Accueil](/homepage.png) |
-| **Projets** | Deux projets présentés avec possibilité d’en savoir plus. | ![Projets](/projets.png) |
-| **Projet SGT** | Application de gestion de tickets (3 interfaces détaillées). | ![SGT](/sgt.png) |
-| **Projet NutriTrack** | Application de suivi nutritionnel intelligent. | ![NutriTrack](/nutritrack.png) |
-| **Témoignages** | Liste des témoignages avec étoiles, suppression et modification (accès réservé). | ![Témoignages](/temoignages.png) |
-| **Nouveau témoignage** | Formulaire pour laisser un avis, avec note et message. | ![Nouveau Témoignage](/nouveautemoignage.png) |
+| **Connexion** | Formulaire de connexion avec validation en direct. | ![Connexion](public/connexion.png) |
+| **Accueil** | Page d’accueil avec ma photo, une présentation de moi, et un résumé de mes compétences. | ![Accueil](public/homepage.png) |
+| **Projets** | Deux projets présentés avec possibilité d’en savoir plus. | ![Projets](public/projets.png) |
+| **Projet SGT** | Application de gestion de tickets (3 interfaces détaillées). | ![SGT](public/sgt.png) |
+| **Projet NutriTrack** | Application de suivi nutritionnel intelligent. | ![NutriTrack](public/nutritrack.png) |
+| **Témoignages** | Liste des témoignages avec étoiles, suppression et modification (accès réservé). | ![Témoignages](public/temoignages.png) |
+| **Nouveau témoignage** | Formulaire pour laisser un avis, avec note et message. | ![Nouveau Témoignage](public/nouveautemoignage.png) |
 
 ---
 
