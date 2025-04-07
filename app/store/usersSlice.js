@@ -3,7 +3,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  users: [], // tableau des utilisateurs {email, motdepasse}
+  users: [], 
 };
 
 const usersSlice = createSlice({

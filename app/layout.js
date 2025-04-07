@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ReduxProvider from './components/ReduxProvider';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import ProtectedRoute from './components/ProtectedRoute'; // 🔐 important
+import ProtectedRoute from './components/ProtectedRoute'; 
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

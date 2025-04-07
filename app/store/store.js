@@ -19,7 +19,7 @@ export const store = configureStore({
 store.subscribe(() => {
   const state = store.getState();
 
-  // On ne sauvegarde pas currentUser
+  
   saveState({
     users: state.users,
     auth: {

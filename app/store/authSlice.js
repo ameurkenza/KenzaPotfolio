@@ -2,8 +2,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  users: [],        // chargés depuis le store global
-  currentUser: null // reste null après un refresh
+  users: [],        
+  currentUser: null 
 };
 
 const authSlice = createSlice({
