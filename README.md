@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  Portfolio de Kenza
 
-## Getting Started
+Bienvenue dans mon portfolio personnel réalisé avec **Next.js**, qui met en valeur mes compétences, mes projets et permet aux utilisateurs de se connecter pour accéder à plus de fonctionnalités.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+##  Technologies utilisées
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js** – Framework React puissant avec génération de pages côté serveur.
+- **React & Redux Toolkit** – Gestion d'état pour l'inscription, la connexion et les témoignages (sans backend).
+- **Bootstrap 5** – Pour un design responsive et élégant.
+- **AOS (Animate On Scroll)** – Pour les animations fluides lors du défilement.
+- **LocalStorage** – Sauvegarde des données (utilisateurs, témoignages) côté client.
+- **CSS personnalisé** – Palette de couleurs personnalisée autour du rose.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+##  Pages du portfolio
 
-## Learn More
+| Page | Description | Capture d'écran |
+|------|-------------|-----------------|
+| **Connexion** | Formulaire de connexion avec validation en direct. | ![Connexion](/connexion.png) |
+| **Accueil** | Page d’accueil avec ma photo, une présentation de moi, et un résumé de mes compétences. | ![Accueil](/homepage.png) |
+| **Projets** | Deux projets présentés avec possibilité d’en savoir plus. | ![Projets](/projets.png) |
+| **Projet SGT** | Application de gestion de tickets (3 interfaces détaillées). | ![SGT](/sgt.png) |
+| **Projet NutriTrack** | Application de suivi nutritionnel intelligent. | ![NutriTrack](/nutritrack.png) |
+| **Témoignages** | Liste des témoignages avec étoiles, suppression et modification (accès réservé). | ![Témoignages](/temoignages.png) |
+| **Nouveau témoignage** | Formulaire pour laisser un avis, avec note et message. | ![Nouveau Témoignage](/nouveautemoignage.png) |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+##  Sécurité et accès
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Toutes les pages sont **protégées** sauf `/connexion` et `/inscription`.
+- Si un utilisateur **rafraîchit la page**, il est automatiquement **déconnecté** pour plus de sécurité.
+- Seuls les utilisateurs inscrits peuvent :
+  - Accéder aux projets
+  - Voir et poster des témoignages
+  - Modifier ou supprimer **leurs propres** témoignages
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+##  Fonctionnalités Redux (sans backend)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-  **Inscription / Connexion** : Stockées en `localStorage`
+- **Témoignages** : Ajout, modification, suppression
+-  **Validation intelligente** : Champs vérifiés avec messages d'erreur en temps réel
+
+---
+
+##  Instructions pour tester
+
+1. Cloner le projet
+2. Lancer avec `npm run dev`
+3. Visiter [http://localhost:3000](http://localhost:3000)
+
+---
+
+Merci d’avoir visité mon portfolio 💗  
+Si tu veux discuter d’un projet ou d’une opportunité, n’hésite pas à me contacter !

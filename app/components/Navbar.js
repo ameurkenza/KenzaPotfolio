@@ -1,24 +1,38 @@
 'use client';
+
 import { useEffect } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
+import { useDispatch, useSelector } from 'react-redux';
+import { logout } from '../store/authSlice';
 
 export default function Navbar() {
   const pathname = usePathname();
+  const router = useRouter();
+  const dispatch = useDispatch();
+
+  const currentUser = useSelector((state) => state.auth.currentUser);
+  const isLoggedIn = !!currentUser;
 
   useEffect(() => {
     import('bootstrap/dist/js/bootstrap.bundle.min.js');
   }, []);
 
+  const handleLogout = () => {
+    const confirmLogout = window.confirm("Êtes-vous sûr de vouloir vous déconnecter ?");
+    if (confirmLogout) {
+      dispatch(logout());
+      router.push('/connexion');
+    }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg bg-light shadow-sm">
       <div className="container">
-        {/* NOM CLIQUABLE POUR REVENIR À L'ACCUEIL */}
         <Link className="navbar-brand fw-bold text-danger" href="/accueil">
           Mon Portfolio
         </Link>
 
-        {/* BOUTON HAMBURGER POUR MOBILE */}
         <button
           className="navbar-toggler"
           type="button"
@@ -31,7 +45,6 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* NAVIGATION */}
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
@@ -53,12 +66,21 @@ export default function Navbar() {
             </li>
 
             <li className="nav-item">
-              <Link
-                className={`nav-link ${pathname === '/connexion' ? 'active fw-semibold text-danger' : ''}`}
-                href="/connexion"
-              >
-                Connexion
-              </Link>
+              {isLoggedIn ? (
+                <button
+                  onClick={handleLogout}
+                  className="btn nav-link fw-semibold text-danger border-0 bg-transparent"
+                >
+                  Déconnexion
+                </button>
+              ) : (
+                <Link
+                  className={`nav-link ${pathname === '/connexion' ? 'active fw-semibold text-danger' : ''}`}
+                  href="/connexion"
+                >
+                  Connexion
+                </Link>
+              )}
             </li>
           </ul>
         </div>
