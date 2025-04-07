@@ -20,6 +20,7 @@ Bienvenue dans mon portfolio personnel réalisé avec **Next.js**, qui met en va
 | Page | Description | Capture d'écran |
 |------|-------------|-----------------|
 | **Connexion** | Formulaire de connexion avec validation en direct. | ![Connexion](public/connexion.png) |
+| **Inscription** | Formulaire d’inscription avec validation en temps réel et messages d’erreur détaillés. | ![Inscription](public/inscription.png) |
 | **Accueil** | Page d’accueil avec ma photo, une présentation de moi, et un résumé de mes compétences. | ![Accueil](public/homepage.png) |
 | **Projets** | Deux projets présentés avec possibilité d’en savoir plus. | ![Projets](public/projets.png) |
 | **Projet SGT** | Application de gestion de tickets (3 interfaces détaillées). | ![SGT](public/sgt.png) |
